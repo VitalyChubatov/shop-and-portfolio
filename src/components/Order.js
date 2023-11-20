@@ -4,8 +4,9 @@ import { FaTrash } from 'react-icons/fa'
 export class Order extends Component {
   render() {
     return (
+      
         <div className='items'>
-				<img src={'./img/' + this.props.item.img} />
+				<img src={'./img/' + this.props.item.img} alt='.' />
 			<div className='items_title'>
 				<h3>{this.props.item.title}</h3>
 				<p>Категория:{this.props.item.category}</p>

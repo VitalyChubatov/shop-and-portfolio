@@ -111,7 +111,7 @@ class App extends React.Component{
 			],
 		}
 		this.state.currentItems = this.state.items
-		this.addToOrder =this.addToOrder.bind(this)//посмотреть
+		this.addToOrder =this.addToOrder.bind(this)
 		this.deleteOrder = this.deleteOrder.bind(this)
 		this.chooseCategory = this.chooseCategory.bind(this)
 	

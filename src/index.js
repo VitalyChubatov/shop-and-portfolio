@@ -2,11 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css'
+import {BrowserRouter} from 'react-router-dom'
+import { Routing } from './components/Routing';
+import { Header } from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <div className='wrapper'>
+        <Routing/>
+      </div>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

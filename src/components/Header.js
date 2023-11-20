@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaShoppingCart } from 'react-icons/fa/index'
+import { Link } from 'react-router-dom'
 
 import Order from './Order.js'
 
@@ -28,12 +29,10 @@ export function Header(props) {
   return (
 		<header>
 			<div>
-				<span className='logo'>Home Page</span>
+				<Link to='/' className='logo'>Home Page</Link>
 				<ul className='nav'>
-					<li href='/'>Про меня</li>
-					<li>Контакты</li>
-					<li>Меню</li>
-					<li>Вход</li>
+					<Link to='/about'>Про меня</Link>
+					<Link to='/contacts'>Контакты</Link>
 				</ul>
 				<FaShoppingCart
 					onClick={() => setCartOpen((cartOpen = !cartOpen))}
